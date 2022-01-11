@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Img\**" />
+    <Content Remove="Img\**" />
+    <EmbeddedResource Remove="Img\**" />
+    <None Remove="Img\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images_login\.DS_Store" />
+    <None Include="wwwroot\images_login\undraw_remotely_2j6y.svg" />
+    <None Include="wwwroot\images_register\.DS_Store" />
+    <None Include="wwwroot\images_register\register.svg" />
+    <None Include="wwwroot\images_register\social.svg" />
+    <None Include="wwwroot\images_register\undraw_remotely_2j6y.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.1" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,81 @@
+﻿ <head>
+    <!-- Style -->
+    <link rel="stylesheet" href="~/css/style_login.css">
+    <title> Abar | Login</title>
+  </head> 
+
+<div class="content">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="~/images_login/undraw_remotely_2j6y.svg" alt="Image" class="img-fluid">
+        </div>
+        <div class="col-md-6 contents">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="mb-4">
+            
+              <p class="mb-4"></p>
+            </div>
+            
+            <form action="#" method="post" class="" >
+              <div class="pt-2"><h3>Entrar</h3> </div>
+            
+              <label for="username">Email</label>
+              <div class="form-group first">
+                
+                <input type="text" class="form-control" id="username" placeholder="Digite seu Email">
+
+              </div>
+              <br>
+              <label for="">Senha</label>
+              
+              <div class="form-group last mb-4">
+               
+                <input type="password" class="form-control" id="password" placeholder="Digite sua Senha">
+                
+              </div>
+              
+              <div class="d-flex mb-5 align-items-center">
+                <label class="control control--checkbox mb-0"><span class="caption">Lembrar Senha</span>
+                  <input type="checkbox" checked="checked"/>
+                  <div class="control__indicator"></div>
+                </label> 
+
+                <label class="control  mb-0"><a  asp-action="Seguranca_feed"  asp-controller="Home" >Esqueceu senha</a>
+                
+                </label> 
+                
+              </div>
+              
+              
+              <a  asp-action="Feed"  asp-controller="Home" style="text-decoration: none; font-size: large; color: aliceblue; text-align: center;" class="btn btn-block btn-primary" >Logar</a>
+         
+              <a asp-action="Create"  asp-controller="Pessoas"style="text-decoration: none; font-size: large; color: aliceblue; text-align: center;" class="btn btn-block btn-primary">Cadastra-se</a>
+             
+              
+              <!--
+              <span class="d-block text-left my-4 text-muted">&mdash; or login with &mdash;</span>
+              
+             <div class="social-login">
+                <a href="#" class="facebook">
+                  <span class="icon-facebook mr-3"></span> 
+                </a>
+                <a href="#" class="twitter">
+                  <span class="icon-twitter mr-3"></span> 
+                </a>
+                <a href="#" class="google">
+                  <span class="icon-google mr-3"></span> 
+                </a>
+              </div>
+              --->
+            </form>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  

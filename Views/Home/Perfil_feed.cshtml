@@ -1,0 +1,232 @@
+﻿<head>
+    <link rel="stylesheet" href="~/css/style_feed.css" />
+    <title>Document</title>
+</head>
+
+<div id="homeProfile">
+        <nav class="navbar nav-cor mb-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" ><img src="~/img_feed/Abar_logomarca_2.jpg.jpg" alt="" width="30" height="24"
+                        class="d-inline-block align-text-top">ABAR</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-menu-button-wide-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M1.5 0A1.5 1.5 0 0 0 0 1.5v2A1.5 1.5 0 0 0 1.5 5h13A1.5 1.5 0 0 0 16 3.5v-2A1.5 1.5 0 0 0 14.5 0h-13zm1 2h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1zm9.927.427A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0l-.396-.396zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Home</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" asp-action="Feed"  asp-controller="Home"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="16" height="16" fill="currentColor" class="bi bi-house-fill"
+                                        viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                                        <path fill-rule="evenodd"
+                                            d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                                    </svg>Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-action="Feed"  asp-controller="Home"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                        <path fill-rule="evenodd"
+                                            d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
+                                        <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+                                    </svg>Amigos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-chat-right-text-fill"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM3.5 3h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zm0 2.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zm0 2.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1z" />
+                                    </svg>Enviar Mensagem</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-action="Seguranca_feed"  asp-controller="Home"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="16" height="16" fill="currentColor" class="bi bi-sliders"
+                                        viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z" />
+                                    </svg>Configurações</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-action="Perfil_feed"  asp-controller="Home" ><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="16" height="16" fill="currentColor" class="bi bi-person-circle"
+                                        viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                        <path fill-rule="evenodd"
+                                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                                    </svg>Perfil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-action="Index"  asp-controller="Home"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                                  <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                                  <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                                </svg> Sair</a>
+                              </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <img height="300px" max-width="fill" src="~/img_feed/publicação01.jpg" />
+                <img class="profile-picture rounded-circle coluna4" src="~/img_feed/profile.jpg" />
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="colunaA col-1"></div>
+                <div class="col-2 colunaDisplay">
+
+                    <div class="container coluna4 bg-none shadow rounded container-perfil">
+                        <hr>
+                        <div class="container-fluid glass">
+                            <p id="nome">Anônimo</p>
+                        </div>
+                        <hr>
+                        <div>
+                            <p id="genero"></p>
+                        </div>
+                        <hr>
+                        <div class="area-apresentacao">
+                            <p id="bio"></p>
+                        </div>
+
+
+                        <p style="text-align: end; color: gray;"> <button type="button" style="border: hidden;"
+                                data-bs-toggle="modal" data-bs-target="#UpdateModal">
+                                Editar<i class="fas fa-pencil-alt"></i>
+                            </button></p>
+
+                    </div>
+
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="UpdateModal" tabindex="-1" aria-labelledby="UpdateModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <p class="modal-title" id="UpdateModalLabel">Edite seu perfil</p>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+
+
+                                <form>
+                                    <label class="m-auto">Nome de usario:</label><br>
+
+
+                                    <input type="text" name="fname" placeholder="o nome que sera exibido" id="name"><br>
+                                    <button type="button" class="btn-cor-profile mt-2"
+                                        onclick="updateProfileName()">Atualizar</button><br>
+                                    <label>Genero:</label><br>
+                                    <input type="text" placeholder="Genero" id="generoValor"><br>
+                                    <button type="button" class="btn-cor-profile mt-2"
+                                        onclick="updateProfileGenero()">Atualizar</button><br>
+
+                                    <label for="fname">Carta de apresentação</label><br>
+                                    <textarea type="text" value="biografia" id="bioText"></textarea><br>
+                                    <button type="button" class="btn-cor-profile"
+                                        onclick="updateProfileBio()">Atualizar</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                <button type="submit" class="btn-cor-profile" data-bs-dismiss="modal"
+                                    onclick="updateProfile()">Finalizar atualizações</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+
+                    <div class="container bg-profile">
+                        <div id="alinhamento" class="m-2 bg border-top rounded status shadow">
+                            <hr />
+                            <img class="rounded-circle status-foto shadow" src="~/img_feed/profile.jpg" />
+                            <textarea id="area-texto-perfil" class="align-content-end rounded no-outline"
+                                name="pensamento" cols="30" rows="10"
+                                placeholder="Escreva o que você está pensando..."></textarea>
+                            <div>
+
+                                <button class="btn btn-cor-profile btn-status-profile">
+                                    Postar<i class="fas fa-pencil-alt ms-1"></i>
+                                </button>
+
+                                <div>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-cor-profile  btn-status-foto-profile"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Foto <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25"
+                                        fill="currentColor" class="bi bi-image-fill ms-2" viewBox="0 0 16 16">
+                                        <path
+                                            d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2V3zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0z" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <p class="modal-title" id="exampleModalLabel">Escolha uma foto</p>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <input type="file" id="flImage" name="fimage" accept="image/*">
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Fechar</button>
+                                                <button type="button" class="btn btn-cor-profile"
+                                                    data-bs-dismiss="modal" id="publica">Publicar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="myHTMLWrapper">
+                            <!-- ESTA DENTRO DO MAIN.JS -->
+                        </div>
+
+                      
+                        </div>
+                    </div>
+                </div>
+                <div class="colunaA col-1"></div>
+                <div class="col-md-2 colunaDisplay">
+                </div>
+            </div>
+
+
+            <div class="col-2 bg-warning coluna3"></div>
+
+        </div>
+    </div>
+    <footer class="bg"></footer>
+    <script src="~/js/Main_feed.js"></script>

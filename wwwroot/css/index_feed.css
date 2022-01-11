@@ -1,0 +1,56 @@
+.nav-link {
+    color:black;  
+}
+
+svg {
+    margin-right: 10px;
+}
+
+.btn-light {
+    margin: 0px;
+}
+
+h1 {
+    margin: 10px;
+}
+select {
+    margin: 10px;
+    font-size: 12px;
+}
+
+.botao{
+    margin-left: 15px;
+}
+
+.form-check {
+    margin-left: 15px;
+    padding-bottom: 5px;
+} 
+   
+
+
+
+
+<form>
+<div class="form-group w-50 p-3">
+    <label for="exampleInputPassword1">
+        <h1 class="display-6">Redefinir Senha</h1>
+    </label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha Atual">
+    <br>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Nova Senha">
+    <br>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirmar Senha">
+</div>
+<div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Deixar Salvo</label>
+</div>
+<div class="botao">
+    <button type="reset" value="Reset" class="btn btn-primary">Redefinir Senha</button>
+    <button type="submit" value="Submit" class="btn btn-primary">Enviar</button>
+</div>
+</form>
+
+
+</div>
