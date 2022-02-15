@@ -39,10 +39,12 @@ body{
   background-color: #F5F5DC;
   
 }
-
+#centralizar {
+margin:0 25% 0 25%;
+}
 .nav-cor a {
-  text-decoration: none;
-  color: #e86f6d;
+    text-decoration: none;
+    color: #e86f6d;
 }
 
 #area-texto {
