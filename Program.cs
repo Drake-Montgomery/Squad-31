@@ -3,7 +3,7 @@ using Abar.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<Context_Pessoa>(options => options.UseSqlServer(@"Server=abar.database.windows.net;Database=Abar;User Id=abarsquad31;Password=Peppa123@;"));
+builder.Services.AddDbContext<Context_Pessoa>(options => options.UseSqlServer(@"Server=abarsquad31.database.windows.net;Database=AbarDB;User Id=squad31;Password=JorgePig48;"));
 
 builder.Services.AddControllersWithViews();
 

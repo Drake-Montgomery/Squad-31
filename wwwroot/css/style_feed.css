@@ -43,6 +43,13 @@ body {
         text-decoration: none;
         color: #e86f6d;
     }
+#centralizar {
+margin:0 25% 0 25%;
+}
+.nav-cor a {
+    text-decoration: none;
+    color: #e86f6d;
+}
 
 #area-texto {
     height: 6rem;
