@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="~/css/style_feed.css" />
     <title> Abar | Feed</title>
 </head>
-<div id="home">
-    <nav class="navbar nav-cor mb-4">
+<nav class="navbar nav-cor mb-4">
         <div class="container-fluid">
             <a class="navbar-brand">
                 <img src="~/img_feed/Abar_logomarca_2.jpg.jpg" alt="" width="30" height="24"
@@ -93,340 +92,377 @@
         </div>
     </nav>
 
-    <div class="container-fluid fixed">
-        <div class="row">
-            <div class="coluna col-sm-1"></div>
-            <div class="col-3 coluna2 d-md-inline  bg-none">
-                <div class="m-2 bg rounded shadow p-2">
-                    <h5>Sugestões de amizade</h5>
-                    <hr />
-                    <div class="suggestion">
-                        <img class=" img-suggestion" src="~/img_feed/perfil1.jpg">
-                        <div>
-                            <p class="suggestion-name">Rose Cambota</p>
-                        </div>
-                    </div>
+  <div class="container-fluid fixed " id="colunaDisplay">
+    <div class="row">
 
-                    <hr />
-                    <div class="suggestion">
-                        <img class=" img-suggestion" src="~/img_feed/perfil2.jpg">
-                        <div>
-                            <p class="suggestion-name">Fabiana Moraes</p>
-                        </div>
-                    </div>
-
-                    <hr />
-                    <div class="suggestion">
-                        <img class=" img-suggestion" src="~/img_feed/perfil3.jpg">
-                        <div>
-                            <p class="suggestion-name">Laura Amaral</p>
-                        </div>
-                    </div>
-                
-                    <hr />
-                    <div class="suggestion">
-                        <img class=" img-suggestion" src="~/img_feed/perfil4.jpg">
-                        <div>
-                            <p class="suggestion-name">Fabiano Gustavo</p>
-                        </div>
-                    </div>
-                    <hr>
-
-                    <div class="suggestion">
-                        <img class="img-suggestion" src="~/img_feed/perfil5.jpg">
-                        <div>
-                            <p class="suggestion-name">Fabiano Cambota</p>
-                        </div>
-                    </div>
-                    <hr>
-                </div>
+      <div class="coluna col-lg-3 d-none d-md-block">
+        <div class="m-2 bg rounded shadow p-2">
+          <h5>Sugestões de amizade</h5>
+          <hr />
+          <div class="suggestion">
+            <img class=" img-suggestion" src="~/img_feed/perfil1.jpg">
+            <div>
+              <p class="suggestion-name">Rose Cambota <button type="button"
+                  class="btn btn-cor btn-sm">Add</button></p>
             </div>
+          </div>
 
-            <div class="col-md-6 col-10 ">
-                <div class="container bg-feed">
-                    <div id="alinhamento" class="m-2 bg border-top rounded status shadow">
-                        <hr />
-                        <img class="rounded-circle status-foto shadow" src="~/img_feed/profile.jpg" />
-                        <textarea id="area-texto" class="align-content-end rounded no-outline" name="pensamento" cols="30"
-                                  rows="10" placeholder="Escreva o que você está pensando..."></textarea>
-
-                        <button class="btn btn-cor btn-status col-sm-2">
-                            Postar<i class="fas fa-pencil-alt ms-1"></i>
-                        </button>
-
-
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-cor col-sm-2 btn-status-foto" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
-                            Foto <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="currentColor"
-                                      class="bi bi-image-fill ms-2" viewBox="0 0 16 16">
-                                <path d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2V3zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0z" />
-                            </svg>
-                        </button>
-                        <div class="container">
-                            <div class="row">
-
-
-
-                                <!-- Modal -->
-                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                                     aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Escolha uma foto</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form>
-                                                    <input type="file" id="flImage" name="fimage" accept="image/*">
-                                                </form>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                                                <button type="button" class="btn btn-cor" data-bs-dismiss="modal" id="publica">Publicar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div id="myHTMLWrapper">
-                        <!-- ESTA DENTRO DO MAIN.JS -->
-                    </div>
-
-                    <div class="m-2 mt-3 rounded shadow p-2 bg">
-                        <div>
-                            <img class="rounded-circle post-foto shadow d-inline-block fixed" src="~/img_feed/publi-perfil1.jpg" />
-
-                            <div class="d-inline-block">
-                                <h5 class="user-name">
-                                    <a>Eliane Souza</a>
-                                </h5>
-                            </div>
-                        </div>
-                        <hr />
-                        <img class="post-size" src="~/img_feed/publicação01.jpg" />
-                        <p></p>
-                        <div class="container">
-                            <div class="row">
-                                <button class="btn btn-cor btn-post col-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22" fill="currentColor"
-                                         class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
-                                        <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
-                                    </svg>
-                                </button>
-                                <button class="btn btn-cor btn-post col-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22" fill="currentColor"
-                                         class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                              d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
-                                    </svg>
-                                </button>
-                                <button class="btn btn-cor btn-post col-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22" fill="currentColor"
-                                         class="bi bi-share-fill" viewBox="0 0 16 16">
-                                        <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z" />
-                                    </svg>
-                                </button>
-                                <button class="btn btn-cor btn-post col-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22" fill="currentColor"
-                                         class="bi bi-chat-square-text-fill" viewBox="0 0 16 16">
-                                        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="m-2 mt-3 rounded shadow p-2 bg">
-                        <div>
-                            <img class="rounded-circle post-foto shadow d-inline-block fixed" src="~/img_feed/publi-perfil02.jpg" />
-
-                            <div class="d-inline-block">
-                                <h5 class="user-name">
-                                    <a>Sonia Damasceno</a>
-                                </h5>
-                            </div>
-                        </div>
-                        <hr />
-                        <img class="post-size" src="~/img_feed/publi-perfil02.jpg" />
-                        <div class="container">
-                            <div class="row">
-                                <button class="btn btn-cor btn-post col-3" onclick="acao">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22" fill="currentColor"
-                                         class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
-                                        <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
-                                    </svg>
-                                </button>
-                                <button class="btn btn-cor btn-post col-3" onclick="acao">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22" fill="currentColor"
-                                         class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                              d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
-                                    </svg>
-                                </button>
-                                <button class="btn btn-cor btn-post col-3" onclick="acao">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22" fill="currentColor"
-                                         class="bi bi-share-fill" viewBox="0 0 16 16">
-                                        <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z" />
-                                    </svg>
-                                </button>
-                                <button class="btn btn-cor btn-post col-3" onclick="acao">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22" fill="currentColor"
-                                         class="bi bi-chat-square-text-fill" viewBox="0 0 16 16">
-                                        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="m-2 mt-3 rounded shadow p-2 bg">
-                        <div>
-                            <img id="user-foto" class="rounded-circle post-foto shadow d-inline-block fixed"
-                                 src="~/img_feed/profile.jpg" />
-
-                            <div class="d-inline-block">
-                                <h5 class="user-name">
-                                    <a>Jonas Aragão</a>
-                                </h5>
-                            </div>
-                        </div>
-                        <hr />
-                        <img id="image" class="post-size" src="~/img_feed/profile.jpg" />
-                        <div class="container">
-                            <div class="row">
-                                <button class="btn btn-cor btn-post col-3" onclick="acao">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22" fill="currentColor"
-                                         class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
-                                        <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
-                                    </svg>
-                                </button>
-                                </button>
-                                <button class="btn btn-cor btn-post col-3" onclick="acao">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22" fill="currentColor"
-                                         class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                              d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
-                                    </svg>
-                                </button>
-                                <button class="btn btn-cor btn-post col-3" onclick="acao">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22" fill="currentColor"
-                                         class="bi bi-share-fill" viewBox="0 0 16 16">
-                                        <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z" />
-                                    </svg>
-                                </button>
-                                <button class="btn btn-cor btn-post col-3" onclick="acao">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22" fill="currentColor"
-                                         class="bi bi-chat-square-text-fill" viewBox="0 0 16 16">
-                                        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="m-2 mt-3 rounded shadow p-2 bg" onclick="acao">
-                        <div>
-                            <img class="rounded-circle post-foto shadow d-inline-block fixed" src="~/img_feed/per5.jpg" />
-
-                            <div class="d-inline-block">
-                                <h5 class="user-name">
-                                    <a>Rodrigo Alberto</a>
-                                </h5>
-                            </div>
-                        </div>
-                        <hr />
-
-                        <img class="post-size" src="~/img_feed/per5.jpg" />
-                        <div class="container">
-                            <div class="row">
-                                <button class="btn btn-cor btn-post col-3" onclick="acao">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22" fill="currentColor"
-                                         class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
-                                        <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
-                                    </svg>
-                                </button>
-                                <button class="btn btn-cor btn-post col-3" onclick="acao">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22" fill="currentColor"
-                                         class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                              d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
-                                    </svg>
-                                </button>
-                                <button class="btn btn-cor btn-post col-3" onclick="acao">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22" fill="currentColor"
-                                         class="bi bi-share-fill" viewBox="0 0 16 16">
-                                        <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z" />
-                                    </svg>
-                                </button>
-                                <button class="btn btn-cor btn-post col-3" onclick="acao">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22" fill="currentColor"
-                                         class="bi bi-chat-square-text-fill" viewBox="0 0 16 16">
-                                        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <hr />
+          <div class="suggestion">
+            <img class=" img-suggestion" src="~/img_feed/perfil2.jpg">
+            <div>
+              <p class="suggestion-name">Fabiana Moraes <button type="button"
+                  class="btn btn-cor btn-sm">Add</button></p>
             </div>
+          </div>
 
-            <div class="coluna col-sm-1"></div>
-            <div class="col-md-3  coluna2 d-md-inline bg-sm-warning">
-                <div class="m-2 bg rounded shadow p-2">
-                    <h5>Lista de amigos</h5>
-                    <hr />
-                    <div class="suggestion">
-                        <img class=" img-suggestion" src="~/img_feed/publi-perfil1.jpg">
-                        <div>
-                            <p class="suggestion-name">Eliane Souza</p>
-                        </div>
-                    </div>
-
-                    <hr />
-                    <div class="suggestion">
-                        <img class=" img-suggestion" src="~/img_feed/publi-perfil02.jpg">
-                        <div>
-                            <p class="suggestion-name">Sonia Damasceno</p>
-                        </div>
-                    </div>
-
-                    <hr />
-                    <div class="suggestion">
-                        <img class=" img-suggestion" src="~/img_feed/per6.jpg">
-                        <div>
-                            <p class="suggestion-name">Jonas Aragão</p>
-                        </div>
-                    </div>
-
-                    <hr />
-                    <div class="suggestion">
-                        <img class=" img-suggestion" src="~/img_feed/per4.jpg">
-                        <div>
-                            <p class="suggestion-name">Isabele Gomes</p>
-                        </div>
-                    </div>
-                    <hr>
-
-                    <div class="suggestion">
-                        <img class="img-suggestion" src="~/img_feed/per3.jpg">
-                        <div>
-                            <p class="suggestion-name">Jô dutra</p>
-                        </div>
-                    </div>
-                    <hr>
-                </div>
+          <hr />
+          <div class="suggestion">
+            <img class=" img-suggestion" src="~/img_feed/perfil3.jpg">
+            <div>
+              <p class="suggestion-name">Laura Amaral <button type="button"
+                  class="btn btn-cor btn-sm">Add</button></p>
             </div>
+          </div>
+
+          <hr />
+          <div class="suggestion">
+            <img class=" img-suggestion" src="~/img_feed/perfil4.jpg">
+            <div>
+              <p class="suggestion-name">Fabiano Gustavo <button type="button"
+                  class="btn btn-cor btn-sm">Add</button></p>
+            </div>
+          </div>
+          <hr>
+
+          <div class="suggestion">
+            <img class="img-suggestion" src="~/img_feed/perfil5.jpg">
+            <div>
+              <p class="suggestion-name">John Cambota <button type="button"
+                  class="btn btn-cor btn-sm">Add</button></p>
+            </div>
+          </div>
+          <hr>
         </div>
-    </div>
-</div>
-</div>
-</div>
-<footer class="bg"></footer>
+      </div>
+      <!-- Main -->
+      <div id="main" class="col-lg-6 col-md-8 col-xs-12 overflow-auto">
 
-<script src="~/js/Main_feed.js"></script>
+
+        <div id="alinhamento" class=" bg border-top rounded status shadow">
+          <hr />
+
+
+          <form>
+            <div class="form-group d-flex flex-column flex-md-row">
+              <div>
+                <img id="m-ladosF" class="rounded-circle d-inline-block" width="90" height="90" src="~/img_feed/profile.jpg" alt="">
+              </div>
+              <input class="form-control flex-fill d-inline-block" type="text" id="status-pub" Width="20%"
+                placeholder="What's up?"></input>
+              <button type="button" id="btn1" class=" btn-cor rounded-left d-inline-block">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="20" fill="currentColor"
+                  class="bi bi-pencil-square" viewBox="0 0 16 16">
+                  <path
+                    d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                  <path fill-rule="evenodd"
+                    d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                </svg></button>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn-cor rounded-right d-inline-block" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="20" fill="currentColor"
+                  class="bi bi-image-fill ms-2" viewBox="0 0 16 16">
+                  <path
+                    d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2V3zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0z" />
+                </svg>
+              </button>
+
+            </div>
+          </form>
+
+
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Escolha uma foto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <input type="file" id="flImage" name="fimage" accept="image/*">
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-cor" data-bs-dismiss="modal" id="publica">Publicar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="myHTMLWrapper">
+          <!-- ESTA DENTRO DO MAIN.JS -->
+        </div>
+
+        <div class="m-2 mt-3 rounded shadow p-2 bg">
+          <div>
+            <img class="rounded-circle post-foto shadow d-inline-block fixed" src="~/img_feed/publi-perfil1.jpg" />
+
+            <div class="d-inline-block">
+              <h5 class="user-name">
+                <a>Eliane Souza</a>
+              </h5>
+            </div>
+          </div>
+          <hr />
+          <img class="post-size" src="~/img_feed/publicação01.jpg" />
+          <p></p>
+          <div class="container">
+            <div class="row">
+              <button class="btn btn-cor btn-post col-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22" fill="currentColor"
+                  class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+                </svg>
+              </button>
+              <button class="btn btn-cor btn-post col-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22" fill="currentColor"
+                  class="bi bi-heart-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                </svg>
+              </button>
+              <button class="btn btn-cor btn-post col-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22" fill="currentColor"
+                  class="bi bi-share-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z" />
+                </svg>
+              </button>
+              <button class="btn btn-cor btn-post col-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22" fill="currentColor"
+                  class="bi bi-chat-square-text-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="m-2 mt-3 rounded shadow p-2 bg">
+          <div>
+            <img class="rounded-circle post-foto shadow d-inline-block fixed" src="~/img_feed/publi-perfil02.jpg" />
+
+            <div class="d-inline-block">
+              <h5 class="user-name">
+                <a>Sonia Damasceno</a>
+              </h5>
+            </div>
+          </div>
+          <hr />
+          <img class="post-size" src="~/img_feed/publi-perfil02.jpg" />
+          <div class="container">
+            <div class="row">
+              <button class="btn btn-cor btn-post col-3" onclick="acao">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22" fill="currentColor"
+                  class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+                </svg>
+              </button>
+              <button class="btn btn-cor btn-post col-3" onclick="acao">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22" fill="currentColor"
+                  class="bi bi-heart-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                </svg>
+              </button>
+              <button class="btn btn-cor btn-post col-3" onclick="acao">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22" fill="currentColor"
+                  class="bi bi-share-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z" />
+                </svg>
+              </button>
+              <button class="btn btn-cor btn-post col-3" onclick="acao">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22" fill="currentColor"
+                  class="bi bi-chat-square-text-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="m-2 mt-3 rounded shadow p-2 bg">
+          <div>
+            <img id="user-foto" class="rounded-circle post-foto shadow d-inline-block fixed" src="~/img_feed/profile.jpg" />
+
+            <div class="d-inline-block">
+              <h5 class="user-name">
+                <a>Jonas Aragão</a>
+              </h5>
+            </div>
+          </div>
+          <hr />
+          <img id="image" class="post-size" src="~/img_feed/profile.jpg" />
+          <div class="container">
+            <div class="row">
+              <button class="btn btn-cor btn-post col-3" onclick="acao">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22" fill="currentColor"
+                  class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+                </svg>
+              </button>
+              </button>
+              <button class="btn btn-cor btn-post col-3" onclick="acao">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22" fill="currentColor"
+                  class="bi bi-heart-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                </svg>
+              </button>
+              <button class="btn btn-cor btn-post col-3" onclick="acao">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22" fill="currentColor"
+                  class="bi bi-share-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z" />
+                </svg>
+              </button>
+              <button class="btn btn-cor btn-post col-3" onclick="acao">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22" fill="currentColor"
+                  class="bi bi-chat-square-text-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="m-2 mt-3 rounded shadow p-2 bg" onclick="acao">
+          <div>
+            <img class="rounded-circle post-foto shadow d-inline-block fixed" src="~/img_feed/per5.jpg" />
+
+            <div class="d-inline-block">
+              <h5 class="user-name">
+                <a>Rodrigo Alberto</a>
+              </h5>
+            </div>
+          </div>
+          <hr />
+
+          <img class="post-size" src="~/img_feed/per5.jpg" />
+          <div class="container">
+            <div class="row">
+              <button class="btn btn-cor btn-post col-3" onclick="acao">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22" fill="currentColor"
+                  class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+                </svg>
+              </button>
+              <button class="btn btn-cor btn-post col-3" onclick="acao">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22" fill="currentColor"
+                  class="bi bi-heart-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                </svg>
+              </button>
+              <button class="btn btn-cor btn-post col-3" onclick="acao">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22" fill="currentColor"
+                  class="bi bi-share-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z" />
+                </svg>
+              </button>
+              <button class="btn btn-cor btn-post col-3" onclick="acao">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="22" fill="currentColor"
+                  class="bi bi-chat-square-text-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="coluna col-lg-3 d-none d-sm-block">
+        <div class="m-2 bg rounded shadow p-2">
+          <h5>Lista de amigos</h5>
+          <hr>
+          <ul class="list-unstyled">
+            <li class="media">
+              <div class="media-body">
+                <div class="suggestion">
+                  <img class=" img-suggestion" src="~/img_feed/publi-perfil1.jpg">
+                  <div>
+                    <p class="suggestion-name">Eliane Souza</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="media my-4">
+              <hr />
+              <div class="suggestion">
+                <img class=" img-suggestion" src="~/img_feed/publi-perfil02.jpg">
+                <div>
+                  <p class="suggestion-name">Sonia Damasceno</p>
+                </div>
+              </div>
+            </li>
+            <li class="media">
+              <hr />
+              <div class="media-body">
+                <div class="suggestion">
+                  <img class=" img-suggestion" src="~/img_feed/per6.jpg">
+                  <div>
+                    <p class="suggestion-name">Jonas Aragão</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="media">
+              <hr />
+              <div class="media-body">
+                <div class="suggestion">
+                  <img class=" img-suggestion" src="~/img_feed/per4.jpg">
+                  <div>
+                    <p class="suggestion-name">Isabele Gomes</p>
+                  </div>
+                </div>
+              </div>
+              <hr>
+            </li>
+
+            <li class="media">
+              <div class="media-body">
+                <div class="suggestion">
+                  <img class="img-suggestion" src="~/img_feed/per3.jpg">
+                  <div>
+                    <p class="suggestion-name">Jô dutra</p>
+                  </div>
+                </div>
+                <hr>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="~/js/Main_feed.js"></script>
+  
